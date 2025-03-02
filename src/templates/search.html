@@ -6,8 +6,12 @@
     <ul>
         <li>
             <form action="/search_results" method="get">
-                <input type="text" required name="search" placeholder="Search Query">
-                <input type="button" type="submit" value="Search">
+                <input required type="text" name="search" id="search" placeholder="Search Query">
+                <select name="filter" id="filter">
+                    <option value="exp">By EXP Value</option>
+                    <option value="date">By Date</option>
+                </select>
+                <input type="submit" name="submit" value="Search">
             </form>
         </li>
     </ul>
