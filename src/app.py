@@ -137,6 +137,14 @@ def show_search():
 @app.route('/search_results')
 def show_search_results(): 
     query = request.args.get("search", "").strip()
+    sort = request.args.get('sort', 'date')
+
+    sort_params = None
+    if sort == 'exp':
+        sort_params = ('exp_value', -1)
+    else:
+        sort_params = ('due_date', 1)
+
     if query:
         search_filter = {
             "$or": [
@@ -144,7 +152,7 @@ def show_search_results():
                 {"description": {"$regex": f".*{query}.*", "$options": "i"}}
             ]
         }
-        tasks = list(db.tasks.find(search_filter))
+        tasks = list(db.tasks.find(search_filter).sort(*sort_params))
     else:
         tasks = []
     return render_template('search_results.html', tasks=tasks, search_query=query)
