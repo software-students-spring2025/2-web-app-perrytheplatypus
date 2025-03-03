@@ -54,7 +54,7 @@ def show_edit():
             {"_id": ObjectId(task_id)},
             {"$set": {
                 "name": request.form.get("name"),
-                "description": request.form.get("done_status") == "true",
+                "description": request.form.get("description"),
                 "xp_value": int(request.form.get("xp_value")),
                 "due_date": datetime.datetime.strptime(request.form.get("due_date"), "%Y-%m-%d")
             }}
