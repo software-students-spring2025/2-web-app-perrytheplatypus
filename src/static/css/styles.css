@@ -2,10 +2,29 @@
 body {
     max-width: 480px; 
     /* I think that's good for mobile */ 
+
+    /* background image */
+    background-image: url('https://i.pinimg.com/originals/a6/ac/92/a6ac9244c02998a5dcce22c324d8d8a4.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100vh; 
+
+
     margin: 0 auto; 
     padding: 10px; 
     font-family: "Press Start 2P", serif;
+    color: white; 
     
+
+}
+
+nav {
+    border: 0px;
+    background-color: rgb(147, 170, 174);
+    color: rgb(147, 170, 174);
+    padding: 3px;
 }
 
 /*from google fonts */
@@ -38,7 +57,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #000000;
+    border: 0px solid #000000;
     padding: 20px; 
     text-align: center;
 }
