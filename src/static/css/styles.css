@@ -51,7 +51,11 @@ nav ul {
     border-radius: 5px;
 }
 
-
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 table {
     width: 50%; 
@@ -59,14 +63,12 @@ table {
     border-radius: 5px; 
     border-color: rgb(147,170,174);
     color: #000000;
-
     align-content: center;
     align-self: center;
-
     border-radius: 5px; 
     padding: 5px;
-    margin-top: 20px; 
     font-size: 0.6em;
+    
 }
 
 th, td {
