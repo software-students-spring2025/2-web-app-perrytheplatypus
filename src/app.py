@@ -141,7 +141,7 @@ def show_search_results():
 
     sort_params = None
     if sort == 'exp':
-        sort_params = ('exp_value', -1)
+        sort_params = ('exp_value', 1)
     else:
         sort_params = ('due_date', 1)
 
