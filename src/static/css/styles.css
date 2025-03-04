@@ -1,6 +1,6 @@
 
 body {
-    max-width: 480px; 
+    max-width: 380px; 
     /* I think that's good for mobile */ 
 
     /* background image */
@@ -11,10 +11,13 @@ body {
     background-attachment: scroll;
     height: 100vh; 
 
+    align-content: center;
+    align-items: center;
 
     margin: 0 auto; 
     padding: 10px; 
     font-family: "Press Start 2P", serif;
+    font-size: 0.8em; 
     color: white; 
     
 
@@ -49,15 +52,26 @@ nav ul {
 }
 
 
-/*for tables styling */
+
 table {
-    width: 100%; 
-    border-collapse: collapse; 
+    width: 50%; 
+    background-color: white;
+    border-radius: 5px; 
+    border-color: rgb(147,170,174);
+    color: #000000;
+
+    align-content: center;
+    align-self: center;
+
+    border-radius: 5px; 
+    padding: 5px;
     margin-top: 20px; 
+    font-size: 0.6em;
 }
 
 th, td {
     border: 0px solid #000000;
-    padding: 20px; 
+    padding: 5px; 
     text-align: center;
+    font-size: 0.7em; /* that should be a smaller font size */
 }
